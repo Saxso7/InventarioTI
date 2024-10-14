@@ -1,0 +1,35 @@
+.init {
+    background-color: aliceblue;
+    border-radius: 20px;
+    position: initial;
+    justify-content: center;
+
+}
+
+body {
+    background-image: url('../img/fondo_blue.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.button-init {
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+}
+
+.card-margin{
+    margin-top: 230px;
+
+}
+
+.card-new{
+    background-color: white;
+    border-radius: 30px;
+    height: 400px;
+    width: 400px;
+
+}
+
