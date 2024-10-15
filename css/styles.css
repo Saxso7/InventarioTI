@@ -10,7 +10,7 @@ body {
     background-image: url('../img/fondo_blue.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
@@ -22,59 +22,77 @@ body {
 
 }
 
-.card-margin{
+.card-margin {
     margin-top: 230px;
 
 }
 
-.card-new{
+.card-new {
     background-color: white;
     border-radius: 30px;
     height: 400px;
     width: 400px;
-    box-shadow: 5px 5px 15px #bc540c, 
-              -5px -5px 15px rgba(255, 255, 255, 0.7);
+    box-shadow: 5px 5px 15px #bc540c,
+        -5px -5px 15px rgba(255, 255, 255, 0.7);
     transition: transform 0.3s ease;
     transform:
-    perspective(100em)
-    rotateX(-1deg);
+        perspective(100em) rotateX(-1deg);
     animation: shadowBlink 3s infinite ease-in-out;
 
 }
 
 @keyframes shadowBlink {
     0% {
-      box-shadow: 5px 5px 15px #bc540c, -5px -5px 15px rgba(255, 255, 255, 0.7);
+        box-shadow: 5px 5px 15px #bc540c, -5px -5px 15px rgba(255, 255, 255, 0.7);
     }
+
     50% {
-      box-shadow: 5px 5px 25px #d67a38, -5px -5px 25px rgba(255, 255, 255, 0.9); /* Aumenta la intensidad */
+        box-shadow: 5px 5px 25px #d67a38, -5px -5px 25px rgba(255, 255, 255, 0.9);
+        /* Aumenta la intensidad */
     }
+
     100% {
-      box-shadow: 5px 5px 15px #bc540c, -5px -5px 15px rgba(255, 255, 255, 0.7);
+        box-shadow: 5px 5px 15px #bc540c, -5px -5px 15px rgba(255, 255, 255, 0.7);
     }
-  }
+}
 
 .icon {
     background-color: white;
 }
 
-main {
-    background-image: url('../img/fondo_blue.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-
-.start{
-    justify-content: start;
+.start {
+    justify-content: end;
     background-position: initial;
     background-color: white;
 
+
 }
 
-.card-main{
+.nav-main {
+
+    background-position: initial;
     background-color: white;
-    
+    width: 100%;
+}
+
+.card-nav-main {
+    background-color: white;
+    border-radius: 10px;
+    margin: 5%;
+    height: 200px;
+    width: 200px;
+    box-shadow: 5px 5px 15px #bc540c,
+        -5px -5px 15px rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s ease;
+
+
+}
+.card-nav-main-end {
+    background-color: white;
+
+    margin: 5%;
+    height: 400px;
+    width: 300px;
+
+
 }
